@@ -32,6 +32,16 @@
         },
         {
             "matches": [
+                "https://91porn.com/view_video.php?*"
+            ],
+            "js": [
+                "js/nineone.js"
+            ],
+            "css": [],
+            "run_at": "document_start"
+        },
+        {
+            "matches": [
                 "https://*.pornhub.com/view_video.php?*"
             ],
             "js": [

@@ -1,6 +1,6 @@
 console.log("nineone is done!!");
 
-// 也是contentScript，只在打开http://91porn.com/view_video.php?*的时候触发
+// 也是contentScript，只在打开http://91porn.com/view_video.php?*或https://91porn.com/view_video.php?*的时候触发
 document.addEventListener('DOMContentLoaded', function () {
     injectCustomJs();
     injectCustomJs2();
