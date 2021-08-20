@@ -19,5 +19,12 @@
 1. 打开那2个网站 [91porn](https://91porn.com/index.php) [pornhub](https://www.pornhub.com/) ，必须要官方地址，不然无法识别
 2. 随便打开一个视频，往下拉，在视频下面，会有个**超级下载**，点击就会显示视频地址，复制到下载工具就可以了，或者打开视频后，快捷键CTRL+F，搜索关键词**超级下载**，快速找到地方
 3. 下载工具推荐EagleGet，[下载地址](http://forum.eagleget.com/viewforum.php?id=3)
-4. enjoy！！！
+4. 再推荐个下载m3u8的工具，[网址](https://github.com/oopsguy/m3u8)
+5. enjoy！！！
+
+# 支持网址
+- [91porn](https://91porn.com/index.php)
+- [pornhub](https://www.pornhub.com/)
+- [57ck](http://57ck.cc/)
+- [hsck](http://hsck.net)
 

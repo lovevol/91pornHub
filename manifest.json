@@ -59,12 +59,23 @@
             ],
             "css": [],
             "run_at": "document_start"
+        },
+        {
+            "matches": [
+                "http://*/vodplay/*"
+            ],
+            "js": [
+                "js/hsck.js"
+            ],
+            "css": [],
+            "run_at": "document_start"
         }
     ],
     "web_accessible_resources": [
         "js/pornhubInject.js",
         "js/nineoneInject.js",
-        "js/jquery-2.2.2.min.js"
+        "js/jquery-2.2.2.min.js",
+        "js/hsckInject.js"
     ],
     "homepage_url": "https://github.com/lovevol/91pornHub",
     "commands": {}
