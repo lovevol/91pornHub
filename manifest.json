@@ -1,20 +1,19 @@
 {
     "version": "1.0.0",
     "name": "91pornHub",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "description": "提取91porn和pornhub视频地址，复制地址后配合其他下载工具下载，推荐EagleGet，配合梯子快速下载",
-    "background": {
-        "scripts": []
-    },
     "icons": {
         "48": "images/48.png",
         "96": "images/96.png",
         "128": "images/128.png"
     },
     "permissions": [
-        "<all_urls>"
     ],
-    "browser_action": {
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "action": {
         "default_icon": "images/96.png",
         "default_title": "91pornHub",
         "default_popup": ""
@@ -72,10 +71,22 @@
         }
     ],
     "web_accessible_resources": [
-        "js/pornhubInject.js",
-        "js/nineoneInject.js",
-        "js/jquery-2.2.2.min.js",
-        "js/hsckInject.js"
+        {
+            "resources": ["js/pornhubInject.js"],
+            "matches": ["https://*.pornhub.com/*"]
+        },
+        {
+            "resources": ["js/nineoneInject.js"],
+            "matches": ["http://91porn.com/*", "https://91porn.com/*"]
+        },
+        {
+            "resources": ["js/jquery-2.2.2.min.js"],
+            "matches": ["http://*/*", "https://*/*"]
+        },
+        {
+            "resources": ["js/hsckInject.js"],
+            "matches": ["http://*/*"]
+        }
     ],
     "homepage_url": "https://github.com/lovevol/91pornHub",
     "commands": {}

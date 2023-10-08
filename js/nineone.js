@@ -12,7 +12,7 @@ function injectCustomJs(jsPath) {
     jsPath = jsPath || 'js/nineoneInject.js';
     var temp = document.createElement('script');
     temp.setAttribute('type', 'text/javascript');
-    temp.src = chrome.extension.getURL(jsPath);
+    temp.src = chrome.runtime.getURL(jsPath);
     temp.onload = function () {
         console.log("nineoneInject.js on loaded");
     };
@@ -24,7 +24,7 @@ function injectCustomJs2(jsPath) {
     jsPath = jsPath || 'js/jquery-2.2.2.min.js';
     var temp = document.createElement('script');
     temp.setAttribute('type', 'text/javascript');
-    temp.src = chrome.extension.getURL(jsPath);
+    temp.src = chrome.runtime.getURL(jsPath);
     temp.onload = function () {
         console.log("jquery-2.2.2.min.js on loaded");
     };

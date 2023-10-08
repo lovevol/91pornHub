@@ -12,7 +12,7 @@ function injectCustomJs(jsPath) {
     jsPath = jsPath || 'js/hsckInject.js';
     var temp = document.createElement('script');
     temp.setAttribute('type', 'text/javascript');
-    temp.src = chrome.extension.getURL(jsPath);
+    temp.src = chrome.runtime.getURL(jsPath);
     temp.onload = function () {
         console.log("hsckInject.js on loaded");
     };

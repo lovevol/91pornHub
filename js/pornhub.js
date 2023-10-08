@@ -13,7 +13,7 @@ function injectCustomJs(jsPath) {
     jsPath = jsPath || 'js/pornhubInject.js';
     var temp = document.createElement('script');
     temp.setAttribute('type', 'text/javascript');
-    temp.src = chrome.extension.getURL(jsPath);
+    temp.src = chrome.runtime.getURL(jsPath);
     temp.onload = function () {
         console.log("pornhubInject.js on loaded");
     };
@@ -25,7 +25,7 @@ function injectCustomJs2(jsPath) {
     jsPath = jsPath || 'js/jquery-2.2.2.min.js';
     var temp = document.createElement('script');
     temp.setAttribute('type', 'text/javascript');
-    temp.src = chrome.extension.getURL(jsPath);
+    temp.src = chrome.runtime.getURL(jsPath);
     temp.onload = function () {
         console.log("jquery-2.2.2.min.js on loaded");
     };
@@ -39,14 +39,14 @@ function initCustomPanel() {
         let child = `
         <div class="tab-menu-wrapper-cell">
             <div id="mySuperDownload" class="js-mixpanel tab-menu-item tooltipTrig"  data-title="下载这部影片">
-                <i class="main-sprite-dark-2"></i>
+                <i class="ph-icon-favorite"></i>
                 <span>超级下载</span>
             </div>
         </div>
     `;
         document.getElementsByClassName("tab-menu-wrapper-row")[0].innerHTML = html + child
     }
-    
+
     if (document.getElementsByClassName("video-actions-tabs")[0]) {
         let html = document.getElementsByClassName("video-actions-tabs")[0].innerHTML;
         let child = `
