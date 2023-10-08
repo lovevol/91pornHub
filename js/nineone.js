@@ -21,12 +21,12 @@ function injectCustomJs(jsPath) {
 
 // 向页面注入自定义JS
 function injectCustomJs2(jsPath) {
-    jsPath = jsPath || 'js/jquery-2.2.2.min.js';
+    jsPath = jsPath || 'js/jquery-3.0.0.min.js';
     var temp = document.createElement('script');
     temp.setAttribute('type', 'text/javascript');
     temp.src = chrome.runtime.getURL(jsPath);
     temp.onload = function () {
-        console.log("jquery-2.2.2.min.js on loaded");
+        console.log("jquery-3.0.0.min.js on loaded");
     };
     document.body.appendChild(temp);
 }

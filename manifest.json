@@ -80,7 +80,7 @@
             "matches": ["http://91porn.com/*", "https://91porn.com/*"]
         },
         {
-            "resources": ["js/jquery-2.2.2.min.js"],
+            "resources": ["js/jquery-3.0.0.min.js"],
             "matches": ["http://*/*", "https://*/*"]
         },
         {
